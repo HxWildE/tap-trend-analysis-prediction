@@ -12,6 +12,8 @@ if __name__ == "__main__":
     print("\n🔥 TOP TRENDING POSTS:\n")
 
     for post in results[:10]:
-        print(f"{post['text']}")
+        print(f"Title: {post['text']}")
         print(f"Velocity: {post['velocity']:.2f}")
+        print(f"Acceleration: {post['acceleration']:.2f}")
+        print(f"Final Score: {post['final_score']:.2f}")
         print("-" * 50)
